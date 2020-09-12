@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Color Picker | Samyak Bambole</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+     <script>
+          let colorPicker;
+
+          function setup() {
+               createCanvas(100, 100);
+               colorPicker = createColorPicker('#00ddff');
+               colorPicker.size(100, 100);
+               colorPicker.position(7, 110); 
+          }
+
+          function draw() {
+               background(colorPicker.color());
+          }
+     </script>
+</head>
+<body>
+</body>
+</html>
